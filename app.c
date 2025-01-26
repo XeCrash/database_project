@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+#include <limits.h>
 
 #define MAX_EMPLOYEES EMPLOYEE_MAX_ARRAY_SIZE
 #define EMPLOYEE_MAX_ARRAY_SIZE 1000
