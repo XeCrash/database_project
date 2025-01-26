@@ -1,0 +1,38 @@
+graph TD
+    subgraph "main() Function"
+        A[Start] --> B{Print Menu};
+        B --> C{Get User Choice};
+        C -- 0 --> J[Exit];
+        C -- 1 --> D[Add Employee];
+        C -- 2 --> E{Print all Employees};
+        C -- 3 --> F[Search Employee];
+        C -- 4 --> G[Delete Employee];
+        C -- Default --> H[Invalid Choice];
+        D --> DA{Get Employee Data via User Input};
+        DA --> DB{Validate Input Data};
+        DB -- Valid --> D1[Add to Database];
+        D1 --> I[Clear Screen];
+        DB -- Invalid --> D2[Print Invalid Input & Clear Char Buffer];
+        D2 --> I[Clear Screen];
+        E --> EA{Employee Count Validation};
+        EA -- Validation: == 0 --> EN[Print No Employees];
+        EN --> I;
+        EA -- Validation: > 0 --> K[Display All Employees];
+        F --> FS{Get Search ID};
+        FS --> F1{Search in Database};
+        F1 -- Found --> F2[Display Employee];
+        F1 -- Not Found --> F3[Print Not Found];
+        F2 --> I;
+        F3 --> I;
+        G --> GD{Get Delete ID};
+        GD --> G1{Search in Database};
+        G1 -- Found --> G2[Delete Employee];
+        G2 --> I;
+        G1 -- Not Found --> G3[Print Not Found];
+        G3 --> I;
+        H --> I;
+        I --> B;
+        K --> I;
+        J[Exit] --> L[Free Memory];
+        L --> M[End];
+    end

@@ -1,0 +1,34 @@
+# Ignore object files and executables
+*.o
+*.out
+*.exe
+
+# Ignore dependency files
+*.d
+
+# Ignore build directories
+/build/
+/obj/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Ignore compiled libraries
+*.dll
+*.so
+*.dylib
+
+# Ignore IDE specific files
+.vscode/
+.VSCodeCounter/
+.idea/
+*.code-workspace
+*.sublime-workspace
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+refcode_main.c
