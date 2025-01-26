@@ -18,7 +18,7 @@
 
 * `start build`  
 or
-* `start bin/debugbuild-run`  
+* `start build-run`  
 or with gcc commands
 * `gcc -g app.c -o bin/debug/database`
 
