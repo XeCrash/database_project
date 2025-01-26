@@ -1,0 +1,26 @@
+name: GCC Build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Get the code from your repository
+
+      - name: Set up GCC
+        uses: egor-tensin/setup-gcc@v1 
+        with:
+          version: latest # Or specify a version, e.g., 10
+
+      - name: Compile code
+        run: |
+          gcc ./app.c -o bin/debug/database
