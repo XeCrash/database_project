@@ -1,6 +1,10 @@
-# *Employee Database - Alpha Dev Phase* 
+# *Employee Database - Alpha Dev Phase (0.5)* 
 
 [![GCC Build](https://github.com/XeCrash/database_project/actions/workflows/c-build.yml/badge.svg?branch=master)](https://github.com/XeCrash/database_project/actions/workflows/c-build.yml)
+
+## About
+
+* Early build, I plan on updating this often, the database will store employees using a file on the disk which isn't added as of this version (0.5)
 
 ## Requirments
 
