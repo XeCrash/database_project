@@ -1,4 +1,4 @@
-# *Employee Database - Alpha Dev Phase (0.5)* 
+# *Employee Database - Alpha v0.5* 
 
 [![GCC Build](https://github.com/XeCrash/database_project/actions/workflows/c-build.yml/badge.svg?branch=master)](https://github.com/XeCrash/database_project/actions/workflows/c-build.yml)
 
